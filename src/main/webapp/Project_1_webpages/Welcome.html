@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="./Welcome.css" rel="stylesheet"/>
+    <title>Welcome</title>
+    </head>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="./Welcome.js"></script>
+
+<script></script>
+<body>
+    <div class="sidenav">
+        <div class="login-main-text">
+           <h2> What would you like to do today?</h2>
+        </div>
+     </div>
+     <div class="main">
+        <div class="col-md-6 col-sm-12">
+           <div class="login-form">
+              <form>             
+                 
+                 <button id="button1" onClick="location.href = './viewReimbursements.html'; return false" flag class="btn btn-black" >View Your Reimbursements</button>
+                 <button id="button2" onClick="location.href = './submitReimbursement.html'; return false" class="btn btn-black">Submit a Reimbursement</button>
+                 <button id="button3" onClick="reply_click3()"class="btn btn-black" >Approve Reimbursements</button>
+
+                 <script type="text/javascript">
+                    function reply_click(clicked_id)
+                    {
+                       alert(clicked_id)
+                        if (clicked_id == "button1") {
+                           window.location = "file:///C:/Users/Samin%20Islam/Desktop/Projects/Project_1_webpages/login.html"
+                           return false
+                          
+                        } if (clicked_id == "button2") {
+                           window.location.href = "http://localhost:8080/project1/Project_1_webpages/submitReimbursement.html"
+                           return false
+                        } if (clicked_id == "button3") {
+                           window.location = "file:///C:/Users/Samin%20Islam/Desktop/Projects/Project_1_webpages/login.html"
+                           return false
+                        }
+                    }
+
+                  </script>
+
+              </form>
+           </div>
+        </div>
+     </div>
+</body>
+</script>
+
+</html>
+
+
+

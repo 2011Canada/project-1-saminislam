@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="./submitReimbursement.css" rel="stylesheet"/>
+    <title>Submit Reimbursement</title>
+    </head>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="./submitReimbursement.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="main-center">
+            <h5>Please fill out the following</h5>
+                <form class="" method="post" action="#">
+                    
+                    <div class="form-group">
+                        <label for="amount">Amount in $</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                <input type="number" step=".01" id = "amount-input" class="form-control" name="amount" placeholder="Enter reimbursement amount"/>
+                            </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reimb_description">Reimbursement Description</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                <input type="text" id = "reimb_des" class="form-control" name="reimb_description" placeholder="Description of your reimbursement"/>
+                            </div>
+                    </div>
+
+                    <div class="form-group">
+                        
+                        <label for="reimb_type">Reimbursement type</label>
+                            <div class="input-group1">
+                               <!-- <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span> -->
+                               <!-- <input type="text" class="form-control" name="reimb_description" placeholder="Description of your reimbursement"/> -->
+
+                               <input type="radio" id="Lodging" name="reimb_type" value="Lodging">
+                               <label for="Lodging">Lodging</label><br>
+                               <input type="radio" id="Travel" name="reimb_type" value="Travel">
+                               <label for="Travel">Travel</label><br>
+                               <input type="radio" id="Food" name="reimb_type" value="Food">
+                               <label for="Food">Food</label><br>
+                               <input type="radio" id="Other" name="reimb_type" value="Other">
+                               <label for="Other">Other</label><br>
+
+                            </div>
+                    </div>
+
+                    <button type="submit" onclick="submitReimbursement()" id="other-button" >Submit Request</button>
+                    
+                </form>
+            </div><!--main-center"-->
+        </div><!--main-->
+    </div><!--container-->
+
+
+</body>
