@@ -1,5 +1,6 @@
 
 async function submitReimbursement(e) {
+    e.preventDefault()
     
     let amount = document.getElementById("amount-input").value
     console.log(amount)
@@ -46,8 +47,19 @@ async function submitReimbursement(e) {
         }
 
         alert("Request has been submitted")
-        window.location.href = "./Welcome.html"
+        //window.location.href = "./Welcome.html"
     }
+
+    /*
+    function mainMenuSubmit(e) {
+        //e.preventDefault()
+        window.location = "./Welcome.html"
+        return false;
+    }
+    */
+
+    document.getElementById("mainMenu").addEventListener('click', mainMenuSubmit)
+    document.getElementById("other-button").addEventListener('click', submitReimbursement )
 
 
 

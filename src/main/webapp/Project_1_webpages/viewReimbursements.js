@@ -16,7 +16,7 @@ async function viewReimbursements(e) {
 
     document.querySelector(".reimbursementHistory").innerHTML = '<ol>' + reimbursements.map(function (reimbursements) {
 
-        return `<li>For: ${reimbursements.reimb_description} in amount: $${reimbursements.amount}. Your unique reimbursement ID is: ${reimbursements.reimb_id}, Current status:  ${reimbursements.reimb_status}.</li>`
+        return `<li>For Reimbursement ID:  ${reimbursements._reimb_id}, Amount Claimed is $${reimbursements.amount}. The reimbursement description: ${reimbursements.reimb_description}.  ->  Current status:  ${reimbursements.reimb_status}.</li>`
 
     }).join('') + '</ol>';
     
