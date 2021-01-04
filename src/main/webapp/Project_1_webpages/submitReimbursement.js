@@ -1,6 +1,6 @@
 
 async function submitReimbursement(e) {
-    e.preventDefault()
+   // e.preventDefault()
     
     let amount = document.getElementById("amount-input").value
     console.log(amount)
@@ -58,10 +58,13 @@ async function submitReimbursement(e) {
     }
     */
 
-    document.getElementById("mainMenu").addEventListener('click', mainMenuSubmit)
-    document.getElementById("other-button").addEventListener('click', submitReimbursement )
+    //document.getElementById("mainMenu").addEventListener('click', mainMenuSubmit)
+   // document.getElementById("other-button").addEventListener('click', submitReimbursement )
 
-
+    var el = document.getElementById('other-button');
+    if(el){
+        document.getElementById("other-button").addEventListener('click', submitReimbursement )
+    }
 
 
 

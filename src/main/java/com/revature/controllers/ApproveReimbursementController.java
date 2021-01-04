@@ -26,13 +26,18 @@ public class ApproveReimbursementController {
 		
 		HttpSession sess = req.getSession();
 		
+		/*
 		if(sess.getAttribute("User-Role") == null) {
 			throw new UnauthenticatedException();
 		} else if(!sess.getAttribute("User-Role").equals("Finance Manager")) {
 			throw new UnauthorizedException();
 		}
+		*/
+		
+		res.getWriter().write(om.writeValueAsString(allusers));
 		
 		
+		/*
 		for (int i = 0; i < allusers.size() - 1 ; i ++) {
 			for (Reimbursements reimb : allusers.get(i).user_reimb_list) {
 				res.getWriter().write(om.writeValueAsString(reimb.get_reimb_id()));
@@ -54,7 +59,7 @@ public class ApproveReimbursementController {
 				res.getWriter().write(om.writeValueAsString(reimb.get_reimb_status()));
 				}
 			}
-		
+		*/
 		res.setStatus(200);
 		}
 	}
