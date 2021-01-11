@@ -6,14 +6,21 @@ An expense reimbursement system which targets two different types of users. A va
 
 * Java 
 * JavaScript 
-* HTML 
-* CSS 
+* HTML/CSS
 * JDBC 
 * Servlets
 * SQL
-* AJAX
-* Bootstrap
-* RDS
-* Tomcat
-* Git
-* Maven
+
+## Features
+
+1. Employee can log in and view the employee dashboard. The employee dashboard shows two options where the employee could view their past submitted tickets or create a new reimbursement ticket.
+2. The employee is given a chance to talk about the reimbursement, input the expense amount, and select the type of reimbursement (lodging, food, travel, and other)
+3. The finance manager can login and view the finance manager dashboard. The finance manager dashboard shows one option which is to view all submitted tickets. As a design choice, the finance manager is not able to submit any tickets.
+4. The finance manager is able to view all tickets and approve or deny tickets upto their own discretion.
+
+
+## Getting Started
+
+1. Clone the project using the following command
+git clone https://github.com/2011Canada/project-1-saminislam.git
+2. 
