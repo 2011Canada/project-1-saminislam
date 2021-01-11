@@ -23,4 +23,6 @@ An expense reimbursement system which targets two different types of users. A va
 
 1. Clone the project using the following command
 git clone https://github.com/2011Canada/project-1-saminislam.git
-2. 
+2. Have Apache Tomcat 9, the latest version of Java, Maven and PosgreSQL installed.
+3. Run the following scripts in your database to initialize your database for this project to be able to run.
+(post the scripts)
