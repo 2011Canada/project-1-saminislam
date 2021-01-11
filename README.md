@@ -1,5 +1,7 @@
 # Expense Reimbursement System
+
 ## Project Description
+
 An expense reimbursement system which targets two different types of users. A valid employee can log in and visit their dashboard to see their pending reimbursement tickets or have the ability to post another reimbursement ticket. The other user is a finance manager that can log in and view all past reimbursement tickets posted by any "employee" users. The finance managers are able to approve or deny an employee's request depending on if the expense was incurred while on company time.
 
 ## Technologies Used
@@ -24,5 +26,11 @@ An expense reimbursement system which targets two different types of users. A va
 1. Clone the project using the following command
 git clone https://github.com/2011Canada/project-1-saminislam.git
 2. Have Apache Tomcat 9, the latest version of Java, Maven and PosgreSQL installed.
-3. Run the following scripts in your database to initialize your database for this project to be able to run.
-(post the scripts)
+3. Run the posted scripts in the scripts column (down below) in your database to initialize your database for this project to be able to run.
+4. Run the program on a Java server.
+5. The program will be able to run on http://localhost:8080/p1/Project_1 on your local browser.
+
+
+
+
+
