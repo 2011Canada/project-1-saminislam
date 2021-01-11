@@ -1,0 +1,89 @@
+NOTE: For every user you input in your database, you will need to execute the [ insert into "ers_user_roles" ("user_role") values ('Employee'); ] first 
+and then  [ insert into samin_project1."ers_users" ("ers_users_username", "ers_users_password", "user_first_name", "user_last_name", "user_email","user_role_id")
+values ('employee1','password1','employeeFN','employeeLN','emp1@hotmail.com',1); ] to ensure that this user becomes an employee in the database.
+
+
+--- Copy the scripts down below in your database ---
+
+drop schema if exists samin_project1;
+create schema samin_project1;
+set schema 'samin_project1';
+
+create table "ers_reimbursement" (
+	"reimb_id" serial primary key,
+	"reimb_amount" numeric not null,
+	"reimb_submitted" text not null,
+	"reimb_resolved" text,
+	"reimb_description" text,
+	"reimb_receipt" bytea,
+	"reimb_author" integer references "ers_users" ("ers_users_id"),
+	"reimb_resolver" integer references "ers_users" ("ers_users_id"),
+    "reimb_status" text,
+	"reimb_type" text
+
+);
+
+select * from "ers_reimbursement" order by "reimb_id" ;
+
+select * from samin_project1."ers_reimbursement" where "reimb_author" = 3; 
+
+drop table "ers_reimbursement";
+
+-- inserting a new reimbursement into table
+insert into "ers_reimbursement" ("reimb_amount","reimb_submitted","reimb_description",
+								 "reimb_receipt","reimb_author","reimb_status",
+								 "reimb_type")
+values (100, '17/12/2020', 'Cost of food expense while staying in Houston for the conference', '\\0111001010', 3, 'Accepted', 'food');
+
+-- updating a particular row in table
+update "ers_reimbursement" 
+set "reimb_resolved" = '10-04-20' 
+where "reimb_id" = 2;
+
+update "ers_reimbursement"
+set "reimb_resolver" = NULL , "reimb_resolved" = NULL
+where "reimb_id" = 4;
+
+
+
+
+
+create table "ers_users" (
+	"ers_users_id" serial primary key,
+	"ers_users_username" text unique,
+	"ers_users_password" text,
+	"user_first_name" text,
+	"user_last_name" text,
+	"user_email" text unique,
+	"user_role_id" integer references samin_project1."ers_user_roles" ("ers_user_role_id")
+
+);
+select * from "ers_users";
+select * from "ers_users" order by "ers_users_id" ;
+
+select * from samin_project1."ers_users" where "ers_users_username" = 'saminislam_' and "ers_users_password" = 'password1';
+
+drop table "ers_users";
+
+insert into samin_project1."ers_users" ("ers_users_username", "ers_users_password", "user_first_name", "user_last_name", "user_email","user_role_id")
+values ('employee1','password1','employeeFN','employeeLN','emp1@hotmail.com',1);
+
+insert into "ers_users" ("ers_users_username", "ers_users_password", "user_first_name", "user_last_name", "user_email","user_role_id")
+values ('financeManager1','password1','financeManagerFN','financeManagerLN','fm1@hotmail.com',2);
+
+
+
+create table "ers_user_roles" (
+	"ers_user_role_id" serial  primary key, 
+	"user_role" text
+
+);
+
+select * from "ers_user_roles";
+
+select "user_role" from samin_project1."ers_user_roles" where "ers_user_role_id" = 1;
+
+drop table "ers_user_roles";
+
+insert into "ers_user_roles" ("user_role")
+values ('Employee');
