@@ -37,8 +37,14 @@ git clone https://github.com/2011Canada/project-1-saminislam.git
 ![Login-p1](https://user-images.githubusercontent.com/57554163/105417348-79a13080-5c09-11eb-807a-c95111f09d61.PNG)
 
 * The user will be sent to the appropriate login page depending on the user login credentials(finance manager/employee).
-* The finance manager will be able to view submitted tickets and approve/deny tickets
-* The employee would be able to submit tickets and view their previously submitted tickets.
+* The employee is able to submit tickets and view their previously submitted tickets.
+* The following image is a picture of the employee dashboard. If a finance manager were to sign in, the choices to submit and view previous 
+reimbursements would have been greyed out but they would have the option to approve/ deny requests.
+
+![employee-login](https://user-images.githubusercontent.com/57554163/105420157-e0284d80-5c0d-11eb-8eee-e57153ad7dbf.PNG)
+
+* The following image shows the forms required to be filled out by the employee in order to submit a reimbursement ticket.
+![sub-reimb](https://user-images.githubusercontent.com/57554163/105420277-11088280-5c0e-11eb-9b95-f1039956a7e2.PNG)
 
 ## Contributors
 
