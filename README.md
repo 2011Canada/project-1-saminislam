@@ -29,3 +29,9 @@ git clone https://github.com/2011Canada/project-1-saminislam.git
 3. Run the posted scripts in the scripts folder in your database to initialize your database for this project to be able to run.
 4. Run the program on a Java server.
 5. The program will be able to run on http://localhost:8080/p1/Project_1 on your local browser.
+
+## Usage 
+
+* The main webpage will ask the user to login. 
+
+!(https://github.com/2011Canada/project-1-saminislam/blob/master/images/Login-p1.PNG)
