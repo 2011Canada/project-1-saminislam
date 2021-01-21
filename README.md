@@ -36,7 +36,9 @@ git clone https://github.com/2011Canada/project-1-saminislam.git
 
 ![Login-p1](https://user-images.githubusercontent.com/57554163/105417348-79a13080-5c09-11eb-807a-c95111f09d61.PNG)
 
-* The user will be sent to the appropriate login page depending on the user login credentials.
+* The user will be sent to the appropriate login page depending on the user login credentials(finance manager/employee).
+* The finance manager will be able to view submitted tickets and approve/deny tickets
+* The employee would be able to submit tickets and view their previously submitted tickets.
 
 ## Contributors
 
