@@ -34,4 +34,12 @@ git clone https://github.com/2011Canada/project-1-saminislam.git
 
 * The main webpage will ask the user to login. 
 
-!(https://github.com/2011Canada/project-1-saminislam/blob/master/images/Login-p1.PNG)
+![Login-p1](https://user-images.githubusercontent.com/57554163/105417348-79a13080-5c09-11eb-807a-c95111f09d61.PNG)
+
+* The user will be sent to the appropriate login page depending on the user login credentials.
+
+## Contributors
+
+*Samin Islam (myself)
+
+
